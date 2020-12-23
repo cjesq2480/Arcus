@@ -324,7 +324,8 @@
         "meta.control.flow"
       ],
       "settings": {
-        "foreground": "#10b1fe"
+        "foreground": "#10b1fe",
+        "fontStyle": "italic"
       }
     },
     {
@@ -344,7 +345,8 @@
         "storage.type.js"
       ],
       "settings": {
-        "foreground": "#4482f5"
+        "foreground": "#4482f5",
+        "fontStyle": "italic"
       }
     },
     {
@@ -391,7 +393,8 @@
         "support.type.enum.graphql"
       ],
       "settings": {
-        "foreground": "#ff6480"
+        "foreground": "#ff6480",
+        "fontStyle": "italic"
       }
     },
     {
@@ -439,7 +442,8 @@
         "text.html.derivative"
       ],
       "settings": {
-        "foreground": "#e84393"
+        "foreground": "#e84393",
+        "fontStyle": "italic",
       }
     },
     {
@@ -453,6 +457,36 @@
       ],
       "settings": {
         "foreground": "#e84393"
+      }
+    },
+    {
+      "name": "Curly Punctuation Objects Begin",
+      "scope": [
+        "punctuation.quasi.element.begin.js",
+        "entity.quasi.element.js",
+        "string.quoted.template.js",
+        "string.quasi.js",
+        "meta.function.js",
+        "meta.method-call.with-arguments.js",
+        "source.js"
+      ],
+      "settings": {
+        "foreground": "#47f0e5",
+      }
+    },
+    {
+      "name": "Curly Punctuation Objects End",
+      "scope": [
+        "punctuation.quasi.element.end.js",
+        "entity.quasi.element.js",
+        "string.quoted.template.js",
+        "string.quasi.js",
+        "meta.function.js",
+        "meta.method-call.with-arguments.js",
+        "source.js"
+      ],
+      "settings": {
+        "foreground": "#47f0e5",
       }
     },
     {
@@ -489,14 +523,16 @@
         "support.variable.magic.python"
       ],
       "settings": {
-        "foreground": "#7d57ef"
+        "foreground": "#7d57ef",
+        "fontStyle": "italic",
       }
     },
     {
       "name": "Tags",
       "scope": ["entity.name.tag", "punctuation.definition.tag"],
       "settings": {
-        "foreground": "#0a79ff"
+        "foreground": "#0a79ff",
+        "fontStyle": "italic"
       }
     },
     {
@@ -580,11 +616,11 @@
     {
       "name": "No Italic",
       "scope": [
-        "keyword.operator",
-        "keyword.other.unit",
-        "support.type.property-name",
-        "keyword.other.special-method",
-        "entity.name.tag",
+        // "keyword.operator",
+        // "keyword.other.unit",
+        // "support.type.property-name",
+        // "keyword.other.special-method",
+        // "entity.name.tag",
         "function"
       ],
       "settings": {
@@ -693,7 +729,8 @@
         "text.html.derivative"
       ],
       "settings": {
-        "foreground": "#fee440"
+        "foreground": "#fee440",
+        "fontStyle": "italic"
       }
     },
     {
@@ -852,7 +889,8 @@
         "meta.method-call.with-arguments.js"
       ],
       "settings": {
-        "foreground": "#e621c8"
+        "foreground": "#e621c8",
+        "fontStyle": "italic",
       }
     },
     {
@@ -899,7 +937,8 @@
         "text.html.derivative"
       ],
       "settings": {
-        "foreground": "#8338ec"
+        "foreground": "#8338ec",
+      "fontStyle": "italic"
       }
     },
     {
@@ -966,22 +1005,42 @@
         "text.html.derivative"
       ],
       "settings": {
-        "foreground": "#0984e3"
+        "foreground": "#0984e3",
+        "fontStyle": "italic"
       }
     },
-
     {
-      "name": "console",
-      "scope":[
-        "support.type.object.console.js",
-        "meta.function.js",
-        "source.js"
-      ],
+      "name": "handelbars tags",
+      "scope": [
+        "entity.name.tag.other.html",
+        "meta.tag.other.html",
+        "text.html.handlebars",
+        "foreground.entity.name.tag"
+        ],
       "settings": {
-        "foreground": "#01ddff",
+        "foreground": "#032e66",
+        "fontStyle": "italic"
       }
     },
-    
+    {
+      "name": "handelbars punctuation",
+      "scope": [
+        "punctuation.definition.tag.html",
+        "meta.tag.other.html",
+        "text.html.handlebars",
+        "foreground.punctuation.definition.tag"
+        ],
+      "settings": {
+        "foreground": "#c92e12"
+      }
+    },
+    {
+      "name": "handlebars text",
+      "scope": ["text.html.handlebars"],
+      "settings": {
+        "foreground": "#ffffff",
+      }
+    },
     {
       "name": "BASH: Command Substitution",
       "scope": "string.interpolated.dollar.shell",
